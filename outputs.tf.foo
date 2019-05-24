@@ -1,3 +1,0 @@
-output "srv_address" {
-    value = "${mongodbatlas_cluster.test.srv_address}"
-}

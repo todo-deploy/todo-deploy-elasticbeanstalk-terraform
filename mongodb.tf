@@ -50,6 +50,6 @@ resource "mongodbatlas_database_user" "test" {
   group = "${mongodbatlas_project.test.id}"
   roles {
     name = "readWrite"
-    database = "todo"
+    database = "${var.database_user_test_db_name}"
   }
 }
