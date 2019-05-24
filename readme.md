@@ -6,7 +6,12 @@ This is part of the [todo-deploy](https://tododeploy.com) project
 
 - [terraform](https://www.terraform.io/)
 - [eb cli](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install.html)
+- a free account at [mongodb.com]
 
 ### Running
 
-1. `make up`
+1. Create a new Organization on your mongoDB acocunt
+2. `export export TF_VAR_mongodb_atlas_org_id=...`
+3. `export export TF_VAR_mongodb_atlas_username=...`
+4. `export export TF_VAR_mongodb_atlas_api_key=...`
+3. `make up`
