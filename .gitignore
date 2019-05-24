@@ -1,3 +1,6 @@
 .terraform
-todo-app\
+terraform.tfstate*
+.terraform.tfstate.lock.info
+
+todo-app/
 todo-app.zip
